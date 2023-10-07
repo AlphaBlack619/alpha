@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Number Input</title>
+</head>
+<body>
+    <button onclick="getNumber()">Enter a number</button>
+    <script>
+        function getNumber() {
+            let userInput = prompt("Enter a number:");
+            if (userInput !== null) {
+                let number = parseFloat(userInput);
+                if (!isNaN(number)) {
+                    console.log("You entered a valid number: " + number);
+                } else {
+                    console.log("Invalid input. Please enter a number.");
+                }
+            }
+        }
+    </script>
+</body>
+</html>
